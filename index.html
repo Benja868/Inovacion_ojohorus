@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detección de Movimiento</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="warning">🚨 Objeto detectado cerca 🚨</div>
+
+  <div id="leftControls">
+    <button id="toggleAlarmBtn">Desactivar Alarma</button>
+  </div>
+
+  <div id="rightControls">
+    <label for="sensitivityRange">Sensibilidad: <span id="sensValue">50</span> px</label>
+    <input type="range" id="sensitivityRange" min="10" max="200" value="50" step="5" />
+  </div>
+
+  <audio id="alarmSound" src="assets/alarma.mp3" preload="auto"></audio>
+
+  <script src="js/detector.js"></script>
+</body>
+</html>

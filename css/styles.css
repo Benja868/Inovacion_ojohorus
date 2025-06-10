@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-image: url('../assets/visor_casco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#warning {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 1000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+#leftControls, #rightControls {
+  position: fixed;
+  top: 10px;
+  z-index: 1100;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 8px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+#leftControls {
+  left: 10px;
+}
+
+#rightControls {
+  right: 10px;
+  text-align: right;
+}
+
+#toggleAlarmBtn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#sensitivityRange {
+  vertical-align: middle;
+  width: 150px;
+  margin-left: 10px;
+}
+
+#rightControls label {
+  font-weight: 600;
+  font-size: 1rem;
+}
